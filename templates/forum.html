@@ -1,0 +1,19 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Soccer Forum</title>
+</head>
+<body>
+<h1>Soccer Forum</h1>
+<ul>
+{% for topic in topics %}
+<li><a href="/topic/{{ topic.id }}">{{ topic.title }}</a></li>
+{% endfor %}
+</ul>
+<p><a href="/">Home</a> | <a href="/about">About</a> | <a href="/blog">Blog</a></p>
+</body>
+</html>
+
+
