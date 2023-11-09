@@ -1,0 +1,19 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Soccer Blog</title>
+</head>
+<body>
+<h1>Soccer Blog</h1>
+<ul>
+{% for post in posts %}
+<li><a href="/post/{{ post.id }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
+<p><a href="/">Home</a> | <a href="/about">About</a> | <a href="/forum">Forum</a></p>
+</body>
+</html>
+
+
